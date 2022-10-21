@@ -1,0 +1,321 @@
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: PressStart2P;
+    src: url(./fonts/PressStart2P.ttf)
+}
+
+.main{
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    gap: 130px;
+    
+}
+
+.caption{
+    text-align: center;
+    font-family: PressStart2P;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 5px 5px rgba(255, 255, 255, 0.1);
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    user-select: none;
+    transition: 0.3s;
+    cursor: text;
+}
+
+.caption:hover{
+    color: white;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    
+}
+
+
+.rock-button{
+    background-color: transparent;
+    border: 2px solid white;
+    height: 90px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    font-family: PressStart2P;
+    color: white;
+}
+
+.paper-button {
+    background-color: transparent;
+    height: 90px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    font-family: PressStart2P;
+    color: white;
+    border: 2px solid white;
+}
+
+.scissor-button {
+    background-color: transparent;
+    height: 90px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    font-family: PressStart2P;
+    color: white;
+    border: 2px solid white;
+
+}
+
+.rock-button:hover{
+
+    color: black;
+    background-color: white;
+}
+
+.paper-button:hover {
+    color: black;
+    background-color: white;
+}
+
+.scissor-button:hover {
+    color: black;
+    background-color: white;
+}
+
+.start{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.start-button{
+    font-size: 40px;
+    font-family: PressStart2P;
+    color: red;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    user-select: none;
+    transition: ease-in;
+
+}
+
+.starthome-button {
+    font-size: 55px;
+    font-family: PressStart2P;
+    color: red;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+    margin-top: 40px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+
+}
+
+.starthome-button:hover {
+    color: rgb(253, 163, 163);
+}
+
+.starthome{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    user-select: none;
+}
+
+.start-img-rock{
+    width: 250x ;
+    height: 220px;
+    transform: translateY(-10%);
+    animation: floater1 1.5s infinite;
+    transition: ease 0.5s;
+    animation-delay: 0.15s;
+    opacity: 0.75;
+}
+
+@keyframes floater1 {
+    0% {
+        transform: translateY(-10%);
+        transition: ease 0.5s;
+    }
+
+    50% {
+        transform: translateY(10%);
+        transition: ease 0.5s;
+    }
+}
+
+.start-img-paper{
+    width: 250x;
+    height: 220px;
+    transform: translateY(-10%);
+    animation: floater2 1.5s infinite;
+    transition: ease 0.5s;
+    animation-delay: 0.3s;
+    opacity: 0.75;
+}
+
+@keyframes floater2 {
+    0% {
+        transform: translateY(-10%);
+        transition: ease 0.5s;
+    }
+
+    50% {
+        transform: translateY(10%);
+        transition: ease 0.5s;
+    }
+}
+
+
+
+.start-img-scissor{
+    width: 250x;
+    height: 220px;
+    transform: translateY(-10%);
+    animation: floater3 1.5s infinite;
+    transition: ease 0.5s;
+    animation-delay: 0.45s;
+    opacity: 0.75;
+}
+
+@keyframes floater3 {
+    0% {
+        transform: translateY(-10%);
+        transition: ease 0.5s;
+    }
+
+    50% {
+        transform: translateY(10%);
+        transition: ease 0.5s;
+    }
+}
+
+.start-home-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    gap: 120px;
+}
+
+.start-button:hover {
+    color: rgb(253, 163, 163);
+}
+
+.score{
+    color: white;
+    font-family: PressStart2P;
+    font-size: 40px;
+    margin-top: 70px;
+    letter-spacing: 15px;
+    user-select: none;
+}
+
+
+.result{
+    border: 2px solid white;
+    height: 45px;
+    width: 600px;
+    align-self: center;
+    margin-top: 60px;
+    cursor: text;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: PressStart2P;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.result:hover{
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.51)
+}
+
+
+.odin{
+    background-color: rgba(0, 0, 0, 0.044);
+    margin-left: -8px;
+    margin-bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    font-family: PressStart2P;
+    user-select: none;
+}
+
+.result-text {
+    
+    letter-spacing: 7px;
+
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 2.0s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
