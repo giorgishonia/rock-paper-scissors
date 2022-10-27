@@ -4,6 +4,11 @@ body{
 }
 
 @font-face {
+    font-family: pixel;
+    src: url(./fonts/pixel.ttf)
+}
+
+@font-face{
     font-family: PressStart2P;
     src: url(./fonts/PressStart2P.ttf)
 }
@@ -14,6 +19,11 @@ body{
     justify-content: center;
     gap: 130px;
     
+}
+
+.score-flex{
+    display: flex;
+    justify-content: space-around;
 }
 
 .caption{
@@ -233,9 +243,9 @@ img{
 .score{
     color: white;
     font-family: PressStart2P;
-    font-size: 40px;
+    font-size: 25px;
     margin-top: 70px;
-    letter-spacing: 15px;
+    letter-spacing: 7px;
     user-select: none;
 }
 
@@ -295,27 +305,4 @@ img{
         blink-caret .75s step-end infinite;
 }
 
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: white;
-    }
-}
 

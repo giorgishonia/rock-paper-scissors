@@ -11,21 +11,24 @@
 <body>
     <h1 class="caption">Rock Paper Scissors</h1>
             <div class="start">
-                <a href="./start.html"><button class="start-button">Menu</button></a>
-                <div class="score">YOU 0-0 PC</div>
+                <a><button class="start-button">START</button></a>
+                <div class="score-flex">
+                    <div class="score" id="playerText">YOU:</div>
+                    <div class="score" id="computerText">PC:</div>
+                </div>
                 <div class="result">
-                    <p class="result-text">Click the buttons below to start the game</p>
+                    <p class="result-text" id="resultText">Click the buttons below to start the game</p>
                 </div>
             </div>
     <div class="main">
         <div>
-            <button class="rock-button">rock</button>
+            <button class="rock-button" id="choiceBtn">rock</button>
             </div>
         <div>
-            <button class="paper-button">paper</button>
+            <button class="paper-button" id="choiceBtn">paper</button>
             </div>
         <div>
-            <button class="scissor-button">scissor</button>
+            <button class="scissor-button" id="choiceBtn">scissor</button>
             </div>
         </div>
     </div>
